@@ -1,0 +1,44 @@
+p<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>
+		li{
+			color:red;
+			text-decoration:underline;
+		}
+		
+		#select{
+			font-size:50px;
+		}
+		
+		.deactive{
+			text-decoration: line-through;
+		}
+		
+	</style>		
+</head>
+<body>
+	
+	<!-- 
+		
+		- li : tag 선택자
+		- select : id 선택자 (단한번)
+		- .deactive : class 선택자 (여러번)
+		
+		selector {
+			property:value
+			: - value-property separator
+			; - declaration
+		}
+		
+	 -->
+	<h1 class="deactive">수업의 순서</h1>
+	<ul>
+		<li class="deactive">HTML</li>
+		<li id="select">CSS</li>
+		<li class="deactive">JavaScript</li>
+	</ul>
+</body>
+</html>

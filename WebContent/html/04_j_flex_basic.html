@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>
+		.container {
+			background-color: powderblue;
+			height:200px;
+			
+			/* flex를 사용하기 위해 부모 tag에 반드시 선언*/
+ 			display:flex;
+ 			
+ 			/* 행 방향 정렬(기본값)*/
+/*  			flex-directtion:row; */
+ 			
+ 			/* text 행 반대쪽 정렬 */
+/*  			flex-direction:row-reverse; */
+			
+			/* 수직 정렬 */
+/* 			flex-direction:column; */
+			
+			/* 수직 반대로 정렬 */
+			flex-direction:column-reverse;
+
+		}
+		.item {
+			background-color:tomato;
+			color:white;
+			border:1px solid white;
+		}	
+	</style>
+</head>
+<body>
+	
+	<!--  블럭 레벨 엘리먼트 : div tag는 화면 전체를 쓴다. -->	
+	<div class="container">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+	</div>
+	
+	
+</body>
+</html>

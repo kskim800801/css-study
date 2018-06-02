@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<style>
+		
+		ul li{
+			color:red;
+		}
+		
+		#lecture>li{
+			border:1px solid red;
+		}
+		
+		ul,ol{
+			background-color:powderblue;
+		}
+		
+	</style>
+<body>
+
+<!-- 
+
+	ul li => 부모, 자손 선택자
+	lecture, ld => 부조, 자식 선택자
+	ul, ol => 대등
+
+ -->
+
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ul>
+<ol id="lecture">
+	<li>HTML</li>
+	<li>CSS
+		<ol>
+			<li>selector</li>
+			<li>declaration</li>
+		</ol>
+	</li>
+	
+	<li>JavaScript</li>
+</ol>
+
+
+</body>
+</html>

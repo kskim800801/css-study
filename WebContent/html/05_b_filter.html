@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style>
+		img {
+		
+			/* 5초동안 장면전환 */
+			transition : all 5s;
+		
+		}
+		
+		/* 마우스 올려놨을 떄 */
+		img:hover {
+		
+			/* 일부 브라우저에서 지원안함*/
+			
+			/* chrome, safari */
+			/* grayscale(흑백)*/
+			-webkit-filter: grayscale(100%) blur(3px);
+			
+			/* opera */
+			-o-filter: grayscale(100%) blur(3px);
+			
+			filter: grayscale(100%) blur(3px);
+		}
+		
+		h1 {
+			-webkit-filter: blur(3px);
+			-o-filter: blur(3px);
+			filter: blur(3px);
+		}
+	</style>
+</head>
+<body>
+	<h1>해돋이</h1>
+	<img src="209.jpg">
+</body>
+</html>

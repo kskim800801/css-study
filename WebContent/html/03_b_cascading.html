@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>
+		li{color:red}
+		#idsel{color:blue !important;}
+		.classsel{color:green;}
+		
+		/*
+			우선순위 : style > id > class > tag
+		*/
+		
+	</style>
+</head>
+<body>
+	<ul>
+		<li>HTML</li>
+		<li id="idsel" class="classsel"
+		style="color:powderblue">CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	<ol>
+		<!-- 우선순위 
+			(구체적) style < id < class < tag (일반적)
+			important가 붙어있는 키워드는 우선순위가 가장 높아짐
+		-->
+		<li>style attribute</li>
+		<li>id selector</li>
+		<li>class selector</li>
+		<li>tag selector</li>
+	</ol>
+</body>
+</html>

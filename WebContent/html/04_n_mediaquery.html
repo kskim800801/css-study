@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+	<!-- 하단의 테그를 넣어야 디바이스 별로 meida tag가 적용된다. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	
+		@media (max-width:600px) {
+			body {
+				background-color: green;
+			}
+		}
+		
+		/* 작은 구간을 밑에 두어야 한다.*/
+		/* mix-width : 500px 이하일 때 red로 변경 */
+		/* mix-width : 500px 이상일 때*/
+		@media (max-width:500px) {
+			body {
+				background-color: red;
+			}
+		}
+		@media (min-width:601px) {
+			body {
+				background-color: blue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul>
+	 	<li>~ 500px : red</li>
+		<li>501 ! 600px : green</li>
+		<li>601px ~ : blue</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+		header {
+			border-bottom:1px solid gray;
+			padding-left:20px;
+		}
+		footer {
+			border-top:1px solid gray;
+			padding-left:20px;
+			text-align: center;
+		}
+		.content {
+			display:flex;
+		}
+		.content nav {
+			border-right:1px solid gray;
+		}
+		.content aside {
+			border-left:1px solid gray;
+		}
+		nav, aside {
+			flex-basis: 150px;
+			flex-shrink: 0;
+		}
+		main {
+			padding:10px;
+		}
+		
+		/* 화면이 줄어들때 메인여역만 줄어든다. */
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>CSS 공부</h1>
+		</header>
+		<section class="content">
+			<nav>
+				<ul>
+					<li>html</li>
+					<li>css</li>
+					<li>javascript</li>
+				</ul>
+			</nav>
+			<main>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+		doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+		doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+		doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+		doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+		doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+		doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+			</main>
+			<aside>
+				광고영역			
+			</aside>
+		</section>
+		<footer>
+			<a href="http://www.naver.com">네이버 홈페이지</a>
+		</footer>
+	</div>
+</body>
+</html>

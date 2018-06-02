@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	html{border:1px solid gray;}
+	div{border:5px solid tomato;
+		margin:10px;
+	}
+	#me{
+		position: relative; /* 이 옵션이 있어야 me가 움직임, 없으면 무시됨 */
+		/*position: static; */ /* 기본값, 다른값을 무시하고 기본위치에 놓임 */
+		left:100px;		/* 좌에서 부터 100px(우로감) */
+/* 		right:100px;*/	/* 우에서 부터 100px(좌로감) */
+						/* left와 right가 동시에 있을경우 left를 따름*/
+		top:100px;		/* 위에서 부터 100px (밑으로 내려감)*/
+/* 		bottom:100px;*/ /*밑에서 부터 100px(위로 올라감))*/
+						/* top, bottom이 같이 나오면 top 우선 */
+	}
+</style>
+</head>
+<body>
+	<div id="other">other</div>
+	<div id="parent">
+		parent
+		<div id="me">me</div>
+	</div>
+</body>
+</html>

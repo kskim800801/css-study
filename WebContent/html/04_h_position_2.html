@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	#parent, #other, #grand{
+		border:5px solid tomato;
+	}
+	#grand{
+		position: relative;
+	}
+	#me{
+		background-color: black;
+		color:white;
+		
+		/* absolute, left, top : html 을 기준으로 자리가 잡힘*/
+		/*
+		position: absolute; 
+		left: 0;
+		top: 0;
+		*/
+		
+		/* absolute : 부모를 기준으로 자리가 잡힘
+			static아 아닌 부모가 나타날때까지 무시하다가
+			static이 아닌 부모가 나타나면 off-set값(위치)을 지정합니다.
+		*/
+		position: absolute;
+		left: 0;
+		top: 0;
+		/* absolute로 지정하면 link가 끊기고 부모자식관계가 없어진다.
+		   또한 me의 witdh는 컨텐트 길이만큼으로 초기화 된다.
+		*/
+		
+		
+	}
+</style>
+</head>
+<body>
+	<div id="other">other</div>
+	<div id="grand">
+		grand
+		<div id="parent">
+			parent
+			<div id="me">me</div>
+		</div>
+	</div>
+</body>
+</html>
